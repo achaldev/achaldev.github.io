@@ -5,13 +5,80 @@
 	<meta charset="UTF-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 	<title>achaljhawar</title>
-	<link rel="stylesheet" href="./icons/font-awesome/css/all.css" />
-	<link rel="stylesheet" href="./main.css" />
-  <script src="https://kit.fontawesome.com/f362315f9e.js" crossorigin="anonymous"></script>
-  <link rel="icon" href="icons/favicon.ico" />
+	<link rel="stylesheet" href="icons/font-awesome/css/all.css" />
+	<link rel="stylesheet" href="css/main.css" />
+        <link rel="shortcut icon" type="image/ico" href="icons/favicon.ico">
+	<script src="https://kit.fontawesome.com/f362315f9e.js" crossorigin="anonymous"></script>
 </head>
 
-<body>
+<body onload="myFunction()" style="margin:0;">
+  	<!-- partial:index.partial.html -->
+	<div class="preloader" id="loader">
+		<div class="preloader__ring">
+			<div class="preloader__sector">L</div>
+			<div class="preloader__sector">o</div>
+			<div class="preloader__sector">a</div>
+			<div class="preloader__sector">d</div>
+			<div class="preloader__sector">i</div>
+			<div class="preloader__sector">n</div>
+			<div class="preloader__sector">g</div>
+			<div class="preloader__sector">.</div>
+			<div class="preloader__sector">.</div>
+			<div class="preloader__sector">.</div>
+			<div class="preloader__sector"></div>
+			<div class="preloader__sector"></div>
+			<div class="preloader__sector"></div>
+			<div class="preloader__sector"></div>
+			<div class="preloader__sector"></div>
+			<div class="preloader__sector"></div>
+			<div class="preloader__sector"></div>
+			<div class="preloader__sector"></div>
+			<div class="preloader__sector"></div>
+			<div class="preloader__sector"></div>
+			<div class="preloader__sector"></div>
+			<div class="preloader__sector"></div>
+			<div class="preloader__sector"></div>
+			<div class="preloader__sector"></div>
+			<div class="preloader__sector"></div>
+			<div class="preloader__sector"></div>
+			<div class="preloader__sector"></div>
+			<div class="preloader__sector"></div>
+			<div class="preloader__sector"></div>
+			<div class="preloader__sector"></div>
+		</div>
+		<div class="preloader__ring">
+			<div class="preloader__sector">L</div>
+			<div class="preloader__sector">o</div>
+			<div class="preloader__sector">a</div>
+			<div class="preloader__sector">d</div>
+			<div class="preloader__sector">i</div>
+			<div class="preloader__sector">n</div>
+			<div class="preloader__sector">g</div>
+			<div class="preloader__sector">.</div>
+			<div class="preloader__sector">.</div>
+			<div class="preloader__sector">.</div>
+			<div class="preloader__sector"></div>
+			<div class="preloader__sector"></div>
+			<div class="preloader__sector"></div>
+			<div class="preloader__sector"></div>
+			<div class="preloader__sector"></div>
+			<div class="preloader__sector"></div>
+			<div class="preloader__sector"></div>
+			<div class="preloader__sector"></div>
+			<div class="preloader__sector"></div>
+			<div class="preloader__sector"></div>
+			<div class="preloader__sector"></div>
+			<div class="preloader__sector"></div>
+			<div class="preloader__sector"></div>
+			<div class="preloader__sector"></div>
+			<div class="preloader__sector"></div>
+			<div class="preloader__sector"></div>
+			<div class="preloader__sector"></div>
+			<div class="preloader__sector"></div>
+			<div class="preloader__sector"></div>
+			<div class="preloader__sector"></div>
+		</div>
+	</div>
 	<nav role="navigation">
 		<div id="menuToggle">
 			<input type="checkbox" />
@@ -20,14 +87,19 @@
     <span></span>
     <ul id="menu">
       <a href="#"><li>Home</li></a>
-      <a onclick="window.location.replace('/About')"><li>About</li></a>
+      <a onclick="window.location.replace('/about')"><li>About</li></a>
       <a onclick="window.location.replace('/contact')"><li>Contact</li></a>
       <a onclick="window.location.replace('/projects')" ><li>Projects</li></a>
       <a onclick="window.location.replace('/achievements')" ><li>Achievements</li></a>
     </ul>
   </div>
  </nav>
-  <div class="container">
+  <div class="container" style="display:none;" id="myDiv" class="animate-bottom">
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
 	<div class="page-wrapper">
 		<div class="content-wrapper">
 			<h1>Hi, I'm Achal</h1>
@@ -55,5 +127,17 @@
       </div>
     </div>
   </div>
+  <script>
+  		var myVar;
+
+function myFunction() {
+  myVar = setTimeout(showPage, 4500);
+}
+
+function showPage() {
+  document.getElementById("loader").style.display = "none";
+  document.getElementById("myDiv").style.display = "block";
+}
+  </script>
   </body>
 </html>
