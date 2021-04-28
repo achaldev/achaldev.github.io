@@ -7,14 +7,14 @@ html,body{
   background-color: black;
   height: 100%;
   min-height: 100%;
-  overflow: hidden;
   -youbkit-touch-callout: none;
   -youbkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
+  overflow: hidden;
 }
-.container {
+.cool {
   height: 100%;
   display: grid;
   place-items: center;
@@ -369,4 +369,23 @@ body
   to {
     transform: rotateY(1turn);
   }
+}
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+}
+
+.title {
+  font-size: 10vw;
+  color: white;
+}
+
+canvas {
+  width: 100%;
 }
